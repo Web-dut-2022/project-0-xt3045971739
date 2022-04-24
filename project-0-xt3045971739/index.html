@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fake Baidu Search</title>
+        <body>
+            <div class="baidu-icon-div">
+                <div class="icon icon-img">
+                    <img src="./img/logo.jpg" class="logo-img" alt="Baidu Logo" title="Baidu Search" height="92">
+                </div>
+              </div>
+            <div id = "root">
+                    <form action="https://www.baidu.com/s?">
+                        <input type="text" name="wd" placeholder="输入文字">
+                        <input type="submit" value="Baidu Search">
+                    </form>
+                    <a href="./image_search.html">
+                        <button>Baidu Image Search</button>
+                    </a>
+                    <a href="./Advanced_search.html">
+                        <button>Baidu Advanced Search</button>
+                    </a>
+            </div>
+        </body>
+    </head>
+    <style>
+         .baidu-icon-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .icon {
+            height: 100%;
+            margin-top: auto;
+        }
+        .icon-img {
+            max-height: 92px;
+            position: relative;
+        }
+        .logo-img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+            width: auto;
+        }
+        #root{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    </style>
+</html>
